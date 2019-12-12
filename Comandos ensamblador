@@ -1,0 +1,6 @@
+mario@N1NJ4DUCK:~/Escritorio/Ensamblador$ nasm -f elf time.asm
+mario@N1NJ4DUCK:~/Escritorio/Ensamblador$ ld -m elf_i386 -s -o time time.o
+mario@N1NJ4DUCK:~/Escritorio/Ensamblador$ ./time
+
+
+ejecutor.sh nombre del archivo
