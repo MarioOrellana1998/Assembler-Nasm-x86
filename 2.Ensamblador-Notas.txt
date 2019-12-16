@@ -1,0 +1,128 @@
+guardamos primer_programa.asm
+ls = ver archivos 
+cd entrar a carpeta 
+nasm -f elf primer_programa.asm
+
+ld -m  elf_i386 -s -o primer_programa.o
+ls
+./primer
+
+sh ../ejecutor.sh (name)
+------------------------
+int 80h
+inc c4
+pop bx
+push cx
+jump etiq
+mul
+div 
+cat
+-----------------
+[] -> direccion en memoria
+e
+
+-------------------
+Instruccion div 
+
+COciente / residuo
+
+->8 bit ah/al
+_>8bit ax/dx
+
+al cociente / ah residuo 
+div =1 operando 
+
+mov bl,6
+mov al,2
+
+div bl -> al/bl
+
+al->cociente
+ah->reisudo 
+
+------------------Saltos ------------------------------
+salto -> cond
+	no cond 
+etiqueta(no es una instruccion)-> pos memoria 
+			l
+			l
+			------>debug -> 101 , 102
+			nasm -> etiquetas
+			ejemplo: nombre:
+	cmp -> modifica las banderas
+	a>b
+	A<b
+	a==b ->zero
+
+
+-JMP
+
+call => subrutinas
+-------------------Comparaciones -------------------------
+Usados para saltos condicionales
+
+_start: (etiquera del inicio del segmento de codigo)
+
+
+jmp sumar:
+mov ebx,2
+mov edx,3
+add ebx,edx ////-------> procedimientos 
+
+jmp -> salto no condicional 
+salto condicional :
+	jz , jo ,jo
+loop -> establecer ciclos 
+call -> subrutinas - > llamados a etiquetas
+
+je -> salto de comparacion de igualdad z=1(ZR)
+5==5 -> Igualdad  0==0 Zero(ZR)
+
+cmp -> compare (altera la bandera si ==)
+n1==n2 
+zf =1 (zr)
+JE
+
+leer_opcion opcion,2
+	mov ax,[opcion]
+	sub ax,'0'
+cmp ax,1
+	je sumar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
