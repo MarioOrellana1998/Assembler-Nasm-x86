@@ -90,6 +90,43 @@ cmp ax,1
 	je sumar
 
 
+-------------------Compare -------------------------------
+cmp(3,3)
+zf =1 
+cf = 0
+
+cmp(4,3)
+zf=0
+cf=0
+
+cmp(3,4)
+zf=0
+cf=1
+
+
+jg -> 1 operando > 2operando
+	zf = 0 cf = 0
+jng ->operando < 2 operando
+zf = 0 cf =1
+
+---------------------- 2020 ----------------------------- 
+je = Igualdad
+jz = result =0
+jmp = salto sin res
+jg = operando 1 > operando 2
+js = signal = 0 pl
+	    = 1 Ng
+
+
+jmp 
+jnn = jz , js , je , jg
+call 
+loop
+
+push -> apila
+pop -> desapila
+
+
 
 
 
