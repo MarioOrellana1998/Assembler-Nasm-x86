@@ -18,7 +18,7 @@ section .data
         msj db "*"
         len equ $ - msj
 
-        msj_enter db "/////"
+        msj_enter db "",10
         len_msj_enter equ $ - msj_enter
 
 section .text   
