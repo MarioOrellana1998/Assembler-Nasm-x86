@@ -15,7 +15,7 @@
 %endmacro
 
 section .data
-        msj db "Ella no te ama :v ",10
+        msj db 10,"Ella no te ama :v ",10
         len equ $ - msj
 section.bss
         n1 resb 1

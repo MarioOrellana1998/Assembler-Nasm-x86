@@ -19,12 +19,12 @@ section .data
         len equ $ - msj
 
 section .bss
-        n1 resb 2
+        n1 resb 1
 section .text   
       global _start 
 _start:
         escribir msj,len
-        leer n1,2
+        leer n1,1
 
 
         mov ecx ,[n1]
@@ -40,7 +40,7 @@ imprimir:
         push ecx
         add ecx,"0"
         mov [n1],ecx
-        escribir n1,2
+        escribir n1,1
         pop ecx
         dec ecx
         jmp principal
