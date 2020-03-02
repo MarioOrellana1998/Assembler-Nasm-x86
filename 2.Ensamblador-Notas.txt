@@ -133,7 +133,19 @@ pop dx ++
 
 mov ax,[esp-4]
 
+---------------------------------------Arreglos ---------------------------------------------------
+db ",","," ==> arreglos SI,DI
+						(POSICION)
 
+--------------------------------------Archivox ----------------------------------------------------
+archivo db 'home/desktop/usuario/archivo.0'
+
+mov eax,5;subrutina (read)
+mov ebx,archivo;direccion
+mov ecx --->l  Formas de acceso
+mov edx --->l
+
+pwd ->direccion de la carpeta actual
 
 
 
