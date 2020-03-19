@@ -15,7 +15,7 @@
 %endmacro
 
 section .data
-	archivo db "/home/mario/codigo.txt",0
+	archivo db "/home/mario/orellana_mario.txt",0
 	len_archivo equ $ - archivo
 
 	error_archivo db "Error , el archivo no se encuentra , cambialo prro",0
